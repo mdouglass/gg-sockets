@@ -1,0 +1,26 @@
+{
+  "name": "gg-sockets",
+  "version": "1.0.0",
+  "description": "Grayscale Games Socket Server",
+  "license": "ISC",
+  "author": "Matthew Douglass <matthew@douglass.email>",
+  "homepage": "https://github.com/mdouglass/gg-sockets",
+  "repository": "mdouglass/gg-sockets",
+  "bugs": "https://github.com/mdouglass/gg-sockets/issues",
+  "main": "lib/server.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha",
+    "prepublish": "npm run lint && npm run test"
+  },
+  "dependencies": {
+    "bl": "^1.1.2",
+    "gg-logger": "1.0.0"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "eslint": "2.10.0",
+    "eslint-config-gg": "1.0.0",
+    "mocha": "2.4.5"
+  }
+}
