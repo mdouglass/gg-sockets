@@ -1,3 +1,4 @@
+'use strict'
 const JSONEncoder = require('.').JSONEncoder
 
 describe('JSONEncoder', () => {

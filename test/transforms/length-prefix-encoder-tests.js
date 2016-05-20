@@ -1,3 +1,4 @@
+'use strict'
 const LengthPrefixEncoder = require('.').LengthPrefixEncoder
 
 describe('LengthPrefixEncoder', () => {

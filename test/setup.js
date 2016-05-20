@@ -1,4 +1,6 @@
-global.expect = require('chai').expect
+'use strict'
+const chai = require('chai')
+global.expect = chai.expect
 
 const path = require('path')
 const Module = require('module')
