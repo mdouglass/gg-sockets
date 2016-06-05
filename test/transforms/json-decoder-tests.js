@@ -15,4 +15,10 @@ describe('JSONDecoder', () => {
     expect(t.read()).deep.equals({ foo: 'bar' })
     expect(t.read()).deep.equals({ baz: 42 })
   })
+
+  it('outputs an error for invalid JSON', () => {
+    const t = new JSONDecoder()
+    t.on('error', e => { expect(e.name).equals('SyntaxError') })
+    t.write(Buffer.from('{"incomplete":true'))
+  })
 })
