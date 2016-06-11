@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "bl": "1.1.2",
-    "gg-error": "1.0.0",
+    "gg-error": "1.0.1",
     "gg-logger": "1.0.3"
   },
   "devDependencies": {
